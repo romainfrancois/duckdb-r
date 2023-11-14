@@ -183,7 +183,7 @@ test_that("aggregators translated correctly", {
   skip_if_not_installed("dbplyr")
   con <- dbConnect(duckdb())
   on.exit(dbDisconnect(con, shutdown = TRUE))
-  translate <- function(...) dbplyr::translate_sql(..., con = con)
+  translate <- function(...) suppressWarnings(dbplyr::translate_sql(..., con = con))
   sql <- function(...) dbplyr::sql(...)
 
   expect_equal(translate(sum(x), window = FALSE), sql(r"{SUM(x)}"))
