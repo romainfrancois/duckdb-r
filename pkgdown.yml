@@ -1,8 +1,8 @@
 pandoc: 3.1.11
 pkgdown: 2.0.9.9000
-pkgdown_sha: 2fa8ef9bdae961e2b4413fa8ca70fae2fd33660f
+pkgdown_sha: 5761658b7582743d0962136cd0c1e6e8d42b56d5
 articles: {}
-last_built: 2024-05-08T06:03Z
+last_built: 2024-05-17T08:10Z
 urls:
   reference: https://r.duckdb.org/reference
   article: https://r.duckdb.org/articles
